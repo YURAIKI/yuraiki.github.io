@@ -2,6 +2,17 @@
 
 Static HTML website for GitHub Pages.
 
+## Second app: Smash Your Way Up!
+
+- `games/smash-your-way-up/index.html` — game introduction and policy center
+- `games/smash-your-way-up/{ko,en}/privacy.html` — game privacy policy
+- `games/smash-your-way-up/{ko,en}/terms.html` — game terms
+- `games/smash-your-way-up/{ko,en}/refund.html` — payments and refunds
+- `games/smash-your-way-up/{ko,en}/data-deletion.html` — data deletion
+- Policy source: `C:/AndroidProject/Hammer/docs/legal/game/`, copied on 2026-10-25. Keep website policies aligned with the app's bundled legal documents when features change.
+- These policies apply separately from Kiddymind AI. The game currently uses AdMob/UMP, local saves, and an age 14+ entry flow; real-money billing is not connected.
+- Before public release, finalize the outstanding operator/privacy notices listed in `C:/AndroidProject/Hammer/docs/CONSENT_AND_GAME_POLICIES.md` (privacy contact, support-email retention, and Google contractual/international processing details). Publishing the website does not configure AdMob messages or Play Console disclosures.
+
 ## Pages
 - `index.html` — YURAIKI brand site
 - `privacy.html` — Privacy Policy
