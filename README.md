@@ -2,7 +2,7 @@
 
 Static HTML website for GitHub Pages.
 
-## Second app: Smash Your Way Up!
+## Second app: Hammer Go!
 
 - `games/smash-your-way-up/index.html` — game introduction and policy center
 - `games/smash-your-way-up/{ko,en}/privacy.html` — game privacy policy
