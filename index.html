@@ -75,7 +75,18 @@
       <a href="terms.html"><b>05</b><span data-ko="이용약관" data-en="Terms of Service">이용약관</span></a>
       <a href="data-deletion.html"><b>06</b><span data-ko="데이터 삭제 요청" data-en="Data Deletion">데이터 삭제 요청</span></a>
     </div>
-</article><article id="hammer-policies" class="policy-product"><h3  data-ko="망치 GO!" data-en="Hammer Go!">망치 GO!</h3><div class="policy-grid"><a href="games/smash-your-way-up/ko/privacy.html" data-game-policy="privacy"><b>01</b><span  data-ko="개인정보처리방침" data-en="Privacy policy">개인정보처리방침</span></a><a href="games/smash-your-way-up/ko/terms.html" data-game-policy="terms"><b>02</b><span  data-ko="게임 이용약관" data-en="Game terms">게임 이용약관</span></a><a href="games/smash-your-way-up/ko/refund.html" data-game-policy="refund"><b>03</b><span  data-ko="결제 및 환불" data-en="Payments and refunds">결제 및 환불</span></a><a href="games/smash-your-way-up/ko/data-deletion.html" data-game-policy="data-deletion"><b>04</b><span  data-ko="데이터 삭제" data-en="Data deletion">데이터 삭제</span></a></div></article></div>  </div>
+</article><article id="hammer-policies" class="policy-product"><h3  data-ko="망치 GO!" data-en="Hammer Go!">망치 GO!</h3><div class="policy-grid"><a href="games/smash-your-way-up/ko/privacy.html" data-localized-policy><b>01</b><span  data-ko="개인정보처리방침" data-en="Privacy policy">개인정보처리방침</span></a><a href="games/smash-your-way-up/ko/terms.html" data-localized-policy><b>02</b><span  data-ko="게임 이용약관" data-en="Game terms">게임 이용약관</span></a><a href="games/smash-your-way-up/ko/refund.html" data-localized-policy><b>03</b><span  data-ko="결제 및 환불" data-en="Payments and refunds">결제 및 환불</span></a><a href="games/smash-your-way-up/ko/data-deletion.html" data-localized-policy><b>04</b><span  data-ko="데이터 삭제" data-en="Data deletion">데이터 삭제</span></a></div></article>
+    <article id="vidlens-policies" class="policy-product">
+      <h3>VidLens</h3>
+      <div class="policy-grid">
+        <a href="apps/vidlens/ko/privacy.html" data-localized-policy><b>01</b><span data-ko="개인정보처리방침" data-en="Privacy Policy">개인정보처리방침</span></a>
+        <a href="apps/vidlens/ko/terms.html" data-localized-policy><b>02</b><span data-ko="서비스 이용약관" data-en="Terms of Service">서비스 이용약관</span></a>
+        <a href="apps/vidlens/ko/refund.html" data-localized-policy><b>03</b><span data-ko="결제 및 환불" data-en="Payments and Refunds">결제 및 환불</span></a>
+        <a href="apps/vidlens/ko/data-deletion.html" data-localized-policy><b>04</b><span data-ko="데이터 삭제" data-en="Data Deletion">데이터 삭제</span></a>
+      </div>
+    </article>
+    </div>
+  </div>
 </section>
 
 <section class="section cta">
@@ -102,15 +113,14 @@
 </footer>
 <script src="script.js"></script>
 <script>
-/** 홈페이지에서 선택한 언어로 게임 정책 링크를 갱신한다. */
-function updateGamePolicyLinks() {
+function updatePolicyLinks() {
   const language = document.documentElement.lang === 'ko' ? 'ko' : 'en';
-  document.querySelectorAll('[data-game-policy]').forEach(link => {
-    link.href = 'games/smash-your-way-up/' + language + '/' + link.dataset.gamePolicy + '.html';
+  document.querySelectorAll('[data-localized-policy]').forEach(link => {
+    link.href = link.getAttribute('href').replace(/\/(ko|en)\//, '/' + language + '/');
   });
 }
-updateGamePolicyLinks();
-document.getElementById('langBtn').addEventListener('click', updateGamePolicyLinks);
+updatePolicyLinks();
+document.getElementById('langBtn').addEventListener('click', updatePolicyLinks);
 </script>
 </body>
 </html>
