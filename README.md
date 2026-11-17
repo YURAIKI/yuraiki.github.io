@@ -50,3 +50,10 @@ Upload the files to a repository, then enable GitHub Pages from the repository's
 
 ## Important
 This website is a product/policy template, not legal advice. The final policies should be reviewed against the actual app build, backend, SDK list and Korean/EU/US legal requirements before launch.
+
+## Smart Glasses Bluetooth Signal Finder
+
+- App name: 스마트 글래스.몰카 신호 찾기
+- Policies: apps/smart-glasses-scanner/privacy.html and terms.html (Korean).
+- Policy source: C:/AndroidProject/scanbluetooth/privacy-site/dist/, copied on 2026-11-18.
+- Keep disclosures aligned with Bluetooth scanning, in-memory results, AdMob/UMP and the fixed ad-free period.
